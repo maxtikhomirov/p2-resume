@@ -1,5 +1,62 @@
 /* Your Website Styles */
 
+body {
+	background: url("../img/bg.png");
+}
+
+.nav {
+	text-align: center;
+}
+
+.nav  p {
+	border-top: 2px solid black;
+}
+
+#educ, #work {
+	text-align: left;
+}
+
+h1 {
+	color: orange;
+	font-family: 'Clicker Script', 'cursive';
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-align: center;
+	font-size: 55px;
+}
+
+h2 {
+	font-family: 'Playball', 'cursive';
+	letter-spacing: 3px;
+	color: orange;
+	text-align: center;
+	border-bottom: 2px solid black;
+	padding-bottom: 10px;
+}
+
+p {
+	line-height: 24px;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+}
+
+ul {
+	color: white;
+}
+
+.nav img {
+	width: 3em; 
+	padding-left: 25px;
+}
+
+.nav p {
+	display: inline-block;
+	vertical-align: bottom;
+	border-bottom: 2px solid black;
+}
+
+
 
 /* Show Grid */
 .showgrid {
