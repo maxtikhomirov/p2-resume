@@ -1,7 +1,13 @@
 /* Your Website Styles */
 
-body {
+.container {
 	background: url("../img/bg.png");
+	border-radius: 2.5em;
+	height: auto;
+}
+
+body {
+	background: url("../img/p1.png");
 }
 
 .nav {
@@ -10,6 +16,46 @@ body {
 
 .nav  p {
 	border-top: 2px solid black;
+}
+
+.primary-nav {
+	position: fixed;
+	width: 63.25%;
+	height: 10%;
+	z-index: 10000;
+	background: darkblue;
+	border-radius: 25px;
+	top: 0em;
+}
+
+.primary-nav li {
+	display: inline;
+	font-size: 2em;
+	font-weight: bold;
+	padding-left: 2em;
+}
+
+.primary-nav li a,
+.primary-nav li a:link {
+	padding-left: 0;
+	text-decoration: none;
+	color: white;
+
+	-webkit-transition: padding-left 0.5s;
+  	-moz-transition: padding-left 0.5s;
+  	-ms-transition: padding-left 0.5s;
+  	-o-transition: padding-left 0.5s;
+  	transition: padding-left 0.5s;
+}
+
+.primary-nav li a:hover {
+  padding-left: 1em;
+  background: skyblue;
+}
+
+.primary-nav li a:active
+ {
+	color: purple;
 }
 
 #educ, #work {
@@ -23,6 +69,8 @@ h1 {
 	letter-spacing: 3px;
 	text-align: center;
 	font-size: 55px;
+	margin-top: 1.4em;
+	padding-top: 0.5em;
 }
 
 h2 {
@@ -32,6 +80,7 @@ h2 {
 	text-align: center;
 	border-bottom: 2px solid black;
 	padding-bottom: 10px;
+	text-indent: 1em;
 }
 
 p {
@@ -61,4 +110,140 @@ ul {
 /* Show Grid */
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
+}
+
+
+/* Media Queries*/
+@media screen and (max-width: 800px) {
+
+	.container {
+		width: 80%;
+		max-width: 80%;
+	}
+
+	.primary-nav {
+		width: 80%;
+		max-width: 80%;
+		height: 10%;
+	}
+
+	.primary-nav li {
+		display: inline;
+		font-size: 1.25em;
+		font-weight: bold;
+		padding-left: 1.8em;
+	}
+
+	.nav {
+		text-align: center;
+		width: 90%;
+		max-width: 90%;
+	}
+
+	.nav img {
+		width: 2em;
+		margin-bottom: 0.5em;
+	}
+
+	.nav  p {
+		border-top: 2px solid black;
+	}
+
+
+	h1 {
+		width: 80%;
+		max-width: 80%;
+		font-size: 2.5em;
+		float: right;
+		margin-right: 1.25em;
+	}
+
+	h2 {
+		width: 100%;
+		max-width: 100%;
+		font-size: 1.5em;
+		float: left;
+		margin-left: 1em;
+	}
+
+	h2 + p {
+		margin-left: 3em;
+	}
+
+	.grid_6,
+	.grid_12 {
+		width: 90%;
+	}
+
+}
+
+/* ========= Mobile ========= */
+
+@media screen and (max-width: 480px) {
+
+	.container {
+		width: 90%;
+		max-width: 90%;
+	}
+
+	.primary-nav {
+		width: 90%;
+		max-width: 90%;
+		height: 10%;
+	}
+
+	.primary-nav li {
+		display: inline-block;
+		font-size: 1.25em;
+		font-weight: bold;
+		padding-left: 1.5em;
+		padding-right: 1em;
+		float: left;
+	}
+
+	.nav {
+		text-align: center;
+		width: 90%;
+		max-width: 90%;
+	}
+
+	.nav img {
+		width: 2em;
+		margin-bottom: 0.5em;
+		margin-right: 1em;
+	}
+
+	.nav  p {
+		border-top: 2px solid black;
+		font-size: 1em;
+	}
+
+
+	h1 {
+		width: 80%;
+		max-width: 80%;
+		font-size: 2em;
+		float: right;
+		margin-right: 1.25em;
+		margin-top: 2em;
+	}
+
+	h2 {
+		width: 100%;
+		max-width: 100%;
+		font-size: 1.25em;
+		float: left;
+		margin-left: 1em;
+	}
+
+	h2 + p {
+		margin-left: 3em;
+		font-size: 0.75em;
+	}
+
+	.grid_6,
+	.grid_12 {
+		width: 90%;
+		font-size: 1em;
+	}
 }
