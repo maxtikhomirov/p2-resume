@@ -114,6 +114,49 @@ ul {
 
 
 /* Media Queries*/
+@media screen and (min-width: 800px) {
+	.container {
+		width: 80%;
+		max-width: 80%;
+		margin-top: -2em;
+	}
+
+	.primary-nav {
+		width: 80%;
+		max-width: 80%;
+		height: auto;
+		font-size: 0.75em;
+	}
+
+	.nav {
+		width: 80%;
+		max-width: 80%;
+	}
+
+	.nav  p {
+		border-top: 2px solid black;
+	}
+
+	h2 {
+		width: 100%;
+		max-width: 100%;
+		font-size: 1.5em;
+		float: left;
+		margin-left: 1em;
+	}
+
+	h2 + p {
+		width: 90%;
+		max-width: 90%;
+		margin-left: 3em;
+	}
+
+	.grid_6,
+	.grid_12 {
+		width: 90%;
+	}
+}
+
 @media screen and (max-width: 800px) {
 
 	.container {
@@ -124,7 +167,7 @@ ul {
 	.primary-nav {
 		width: 80%;
 		max-width: 80%;
-		height: 10%;
+		height: auto;
 	}
 
 	.primary-nav li {
